@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="detail">
+
+
+
+	
+	<insert id="add">
+		INSERT INTO detail 
+		(id,price,sale_price) VALUES (#{id},#{price},#{salePrice})
+	</insert>
+	
+	
+	<insert id="add_mobile">
+		INSERT INTO detail (id,category,brand,size,color,price,sale_price) 
+		VALUES (#{id},#{category},#{brand},#{size},#{color},#{price},#{salePrice})
+	</insert>
+
+	
+	
+	
+</mapper>
